@@ -1,0 +1,89 @@
+{% extends "base.html" %} {% block title %} APPLIED SCIENCE {% endblock %} {% block main %} {% load static %}
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+
+<div class="col-fluid text-center my-4">
+    <table class="table">
+        <tr>
+            <th scope="col"><b>sr. no</b></th>
+            <th scope="col"><b>Name</b></th>
+
+            <th scope="col"><b>Designation</b></th>
+            <th scope="col"><b>Qualification</b></th>
+            <th scope="col"><b>Experience</b></th>
+            <th scope="col"><b>Email Address</b></th>
+            <th scope="col"><b>Area of Specialization</b></th>
+            <th scope="col"><b>Image</b></th>
+        </tr>
+
+        <tr>
+            <td scope="row">1</td>
+            <td> PROF BHOSALE SAMBHAJI HANMANTRAO (HOD)</td>
+            <td>Asso.Prof</td>
+            <td> M.Sc(Org.Chem), M.Phil(Chem.Sci), B.Ed, LL.B, MBA (HRM)</td>
+            <td>17 years
+            </td>
+            <td> advshbhosale001@gmail.com</td>
+            <td> Organic Chemistry</td>
+            <td> <img src="{% static 'dept/as/1.jpg' %}">
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">2</td>
+            <td> PROF DR. ASHWINKUMAR SHREERAM MUNDHE </td>
+            <td>Asso.Prof</td>
+            <td> M.A.(English), M.Phil, NET, B.Ed, PhD</td>
+            <td>15 years</td>
+            <td> aswinkumar.munde@gmail.com</td>
+            <td> English Literature</td>
+            <td> <img src="{% static 'dept/as/2.jpg' %}">
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">3</td>
+            <td>PROF NAGENDRA P. PATIL </td>
+            <td>Asso.Prof</td>
+            <td>M.Sc (Maths), B.Ed</td>
+            <td> 12 years</td>
+            <td> nppatil101@gmail.com</td>
+            <td>Applied Mathematics</td>
+            <td> <img src="{% static 'dept/as/3.jpg' %}">
+            </td>
+        </tr>
+
+        <tr>
+            <td scope="row">4</td>
+            <td> PROF RACHANA SURESH BHAGWAT </td>
+            <td>Asso.Prof</td>
+            <td> M.Sc(Math), B.Ed, MBA(HR)
+            </td>
+            <td> 10 years</td>
+            <td> rachanabhag@gmail.com</td>
+            <td>Applied Maths</td>
+            <td> <img src="{% static 'dept/as/4.jpg' %}">
+            </td>
+        </tr>
+        <tr>
+            <td scope="row">5</td>
+            <td> AJAY ANKUSH GORE </td>
+            <td> LAB Assis</td>
+            <td> M.Sc. (Chemistry), M.Sc.(Maths.), B.Ed. & CIHR</td>
+            <td> 09 years</td>
+            <td> ajaygore96@gmail.com
+            </td>
+            <td> </td>
+            <td> <img src="{% static 'dept/as/5.jpg' %}">
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,160 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+FACULTIES-CIVIL ENGINEERING{% endblock  %}
+
+{% block main %}
+
+{% load static %}
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+
+    <div class="col-fluid text-center my-4">
+        <table class="table">
+            <tr>
+                <th scope="col"><b>sr. no</b></th>
+                <th scope="col"><b>Name</b></th>
+
+                <th scope="col"><b>Designation</b></th>
+                <th scope="col"><b>Qualification</b></th>
+                <th scope="col"><b>Experience</b></th>
+                <th scope="col"><b>Email Address</b></th>
+                <th scope="col"><b>Area of Specialization</b></th>
+                <th scope="col"><b>Image</b></th>
+            </tr>
+
+            <tr>
+                <td scope="row">1</td>
+                <td> PROF. MAHESH KAKASAHEB SHINDE (HOD) </td>
+                <td>Asst. Prof</td>
+                <td>M.E.(Civil)</td>
+                <td> 7 years</td>
+                <td>civil.engg@vdf.in</td>
+                <td>Transportation Engineering</td>
+                <td> <img style="    max-width: 200px;" src="{% static 'dept/ce/shinde_m.k.jpeg' %}">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td scope="row">2</td>
+                <td> PROF. SUSHMA S. THORAT </td>
+                <td>Asst.Prof</td>
+                <td>PhD, M.E.</td>
+                <td> 04 years(teaching) ,<br>14 years (field)</br>
+                </td>
+                <td> thoratsushma@rediffmail.com</td>
+                <td>Structural Engineering</td>
+                <td> <img src="{% static 'dept/ce/1.jpg' %} ">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td> PROF. SHASHIKANT GOPAL KAMBLE </td>
+                <td>Asst.Prof</td>
+                <td>M.E.</td>
+                <td> 4.5 years</td>
+                <td> Kamble.shashi123@gmail.com</td>
+                <td>Construction Management</td>
+                <td> <img src="{% static 'dept/ce/2.jpg' %}">
+                </td>
+            </tr>
+
+            <tr>
+                <td scope="row">4</td>
+                <td> PROF. NITIN U. SONAVANE </td>
+                <td>Asst.Prof</td>
+                <td>B.Tech(Civil)<br> M.Tech(Water Management)</br>
+                </td>
+                <td> 4 years</td>
+                <td>nusonavane@gmail.com</td>
+                <td>
+                    <ol style="    text-align: start;">
+                        <li>Computational Hydraulics</li>
+                        <li>Watershed modeling</li>
+                        <li>Applications of Numerical Methods in Water Resources Engg.</li>
+                        <li>Applications of Soft Computing Techniques.</li>
+                    </ol>
+                </td>
+                <td> <img src="{% static 'dept/ce/4.jpg' %}">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">5</td>
+                <td> PROF. BHAGYALAKSHMI SHIVKANTH BIDVE </td>
+                <td>Asst.Prof</td>
+                <td> M.Tech</td>
+                <td> 2 years</td>
+                <td>bidve.bhagyalaxmi@gmail.com</td>
+                <td>Structural Engineering</td>
+                <td> <img src="{% static 'dept/ce/5.jpg' %}">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">6</td>
+                <td> PROF. RAKH USHA M. </td>
+                <td>Asst.Prof</td>
+                <td> B.E.(Civil)<br>M.E.</br>
+                </td>
+                <td> 05 years</td>
+                <td>usharakh0505@gmail.com</td>
+                <td>Water Resource Engineering</td>
+                <td> <img src="{% static 'dept/ce/6.jpg' %}">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">7</td>
+                <td> ASST. KHAJA DASTGIR SHAIKH </td>
+                <td>LAB ASST. </td>
+                <td> ITI (Surveiour)
+                </td>
+                <td> 06 years</td>
+                <td>shaikh2020@gmail.co</td>
+                <td></td>
+                <td> <img src="{% static 'dept/ce/7.jpeg' %}">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">8</td>
+                <td> PROF. Nanda Kadaji Bhandarkote
+                </td>
+                <td>Asst. Prof. </td>
+                <td> M.Tech.
+                </td>
+                <td> 01 years</td>
+                <td>nandakbhandarkote007@gmail.com</td>
+                <td>Civil-Structural Engineering </td>
+                <td> <img src="{% static 'dept/ce/bhandarkotenl.JPG' %}">
+                </td>
+            </tr>
+
+            <tr>
+                <td scope="row">9</td>
+                <td> PROF. Suvarna Shivajirao Waghmare
+                </td>
+                <td>Asst. Prof.  </td>
+                <td> M.Tech.
+                </td>
+                <td> 2 Year</td>
+                <td>suvarnawaghmare5275@gmail.com</td>
+                <td>Civil-Water Management</td>
+                <td> <img  src="{% static 'dept/ce/Waghmare Mam.jpeg' %}" style="height: 300px;">
+                </td>
+            </tr>
+
+
+
+
+            
+        </table>
+
+    </div>
+
+{% endblock %}

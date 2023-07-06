@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block title %}{% endblock %} {% block main %}
+
+<div class="container">
+    <h1 class="h1 text-center my-3">{{link.title}}</h1>
+</div>
+
+
+
+
+<div class="container">
+    {{link.body|safe}}
+</div>
+
+
+{% endblock %}

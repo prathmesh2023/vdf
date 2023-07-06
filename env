@@ -1,0 +1,48 @@
+
+
+
+apt update
+apt upgrade
+apt install python3
+apt install python3-pip
+apt install python3-dev
+pip3 install django and other packs
+
+apt install apache2
+libapache2-mod-wsgi-py3 
+
+sudo ufw app info "Apache Full"
+
+sudo ufw allow in "Apache Full"
+
+sudo chown :www-data project
+
+sudo chmod -R 775 project
+
+
+sudo chown :www-data project/db.sqlite3
+
+sudo chmod -R project/db.sqlite3
+
+sudo systemctl restart apache2 
+
+
+#Apache2.con
+
+
+WSGIScriptAlias / /var/www/html/project/project/wsgi.py
+WSGIPythonPath /var/www/html/project/
+Alias /static/ /var/www/html/project/static/
+<Directory /var/www/html/project/>
+   <Files wsgi.py>
+      Order deny,allow
+      Allow from all
+   </Files>
+</Directory>
+
+
+<Directory /var/www/html/project/static>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>

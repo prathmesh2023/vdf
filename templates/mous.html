@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %} {% endblock %} {% block main %}
+
+<div class="container">
+    <h1 class="h1 text-center my-2">MOU's between various companies and VDF SCHOOL OF ENGG & TECHNOLOGY LATUR</h1>
+
+
+</div>
+
+
+
+
+<div class="container text-center my-5" style="background-color: rgb(226, 168, 43); color: #830a0a; font-size: 15px;">
+    <ul class="list-group list-group-flush">
+        <b>
+            {% for i in mou %}
+              
+          
+            <i>
+
+            <a href="/mou/{{i.link}}" style="text-decoration: none;"><li class="list-group-item lin">{{i.title}}</li></a>
+
+      
+        </i>    {% endfor %} 
+                </b>
+    </ul>
+
+
+</div>
+
+
+
+
+{% endblock %}

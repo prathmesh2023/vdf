@@ -1,0 +1,163 @@
+{% extends 'base.html' %} {% block title %} LIBRARY {% endblock %} {% block main %}
+
+<div class="container">
+
+
+    <table class="table my-4">
+        <tbody>
+            <tr class="su-even">
+                <td>1</td>
+                <td>TOTAL NO. OF BOOKS</td>
+                <td>10357</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>TOTAL NO. OF TITLES</td>
+                <td>2953</td>
+            </tr>
+            <tr class="su-even">
+                <td>3</td>
+                <td>TOTAL NO. OF SOCIAL WELFARE BOOKS</td>
+                <td>1080</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>NO. OF INTERNATIONAL JOURNALS</td>
+                <td>5</td>
+            </tr>
+            <tr class="su-even">
+                <td>5</td>
+                <td>NO. OF NATIONAL JOURNALS</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>E-GRANTHALAYA SOFTWARE</td>
+                <td>E-LIBRARY</td>
+            </tr>
+            <tr class="su-even">
+                <td>7</td>
+                <td>Total Books Cost</td>
+                <td>Rs.4418895/-</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>1)Book Rack-14,<br>2)Newspaper stand-2,<br>3)Cup Board-2</td>
+                <td>Rs.606463/-</td>
+            </tr>
+            <tr class="su-even">
+                <td>9</td>
+                <td>NO. OF NON-BOOK MATERIALS (CD,DVD, PCB,)</td>
+                <td>542</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>
+
+<div class="container text-center">
+
+    <h2>FACULTIES</h2>
+
+
+</div>
+
+
+
+    
+{% load static %}
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+
+<div class="col-fluid text-center my-4">
+    <table class="table">
+        <tr>
+            <th scope="col"><b>sr. no</b></th>
+            <th scope="col"><b>Name</b></th>
+
+            <th scope="col"><b>Designation</b></th>
+            <th scope="col"><b>Qualification</b></th>
+            <th scope="col"><b>Experience</b></th>
+            <th scope="col"><b>Email Address</b></th>
+            <th scope="col"><b>Area of Specialization</b></th>
+            <th scope="col"><b>Image</b></th>
+        </tr>
+
+      
+
+        
+        <tr>
+            <td scope="row">1</td>
+            <td>Mr. SHINDE DILIP ANANDRAO </td>
+            <td>LIBRARIAN </td>
+            <td>M. Lib., B.A., B.ED. Ph.d. (Appear) </td>
+            <td> 11 years</td>
+            <td>dilip.shinde58@gmail.com </td>
+            <td> Role of IPR and DRM in LIS profession. </td>
+            <td> <img style="height:250px;" src="{% static 'dept/lab/Shinde Dilip.jpeg' %}">
+            </td>
+        </tr>
+
+        <tr>
+            <td scope="row">2</td>
+            <td>Mr. Pawar Omprakash Ramrao </td>
+            <td>LIBRARY Attendant</td>
+            <td>B.A., D.T.ed.</td>
+            <td> 7 years</td>
+            <td>ompawarvdf@gmail.com</td>
+            <td></td>
+            <td> <img style="height:250px;" src="{% static 'dept/lab/Pawar Omprakash.jpeg' %}">
+            </td>
+        </tr>
+
+
+
+    </table>
+
+</div>
+
+
+
+
+
+
+
+{% load static %}
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-thumbnail border-0" src="{% static 'pages/l1.jpg' %}">
+        </div>
+
+        <div class="col-md-4">
+            <img class="img-thumbnail border-0" src="{% static 'pages/l2.jpg' %}">
+        </div>
+
+        <div class="col-md-4">
+            <img class="img-thumbnail border-0" src="{% static 'pages/l3.jpg' %}">
+        </div>
+
+        <div class="col-md-4">
+            <img class="img-thumbnail border-0" src="{% static 'pages/l4.jpg' %}">
+        </div>
+
+        <div class="col-md-4">
+            <img class="img-thumbnail border-0" src="{% static 'pages/l5.jpg' %}">
+        </div>
+        <div class="col-md-4">
+            <img class="img-thumbnail border-0" src="{% static 'pages/l6.jpg' %}">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

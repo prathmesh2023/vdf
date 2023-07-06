@@ -1,0 +1,179 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+FACULTIES-ELECTRICAL ENGINEERING{% endblock  %}
+
+{% block main %}
+
+{% load static %}
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <div class="col-fluid text-center my-4">
+        
+        <table class="table">
+            <tr>
+                <th scope="col"><b>sr. no</b></th>
+                <th scope="col"><b>Name</b></th>
+
+                <th scope="col"><b>Designation</b></th>
+                <th scope="col"><b>Qualification</b></th>
+                <th scope="col"><b>Experience</b></th>
+                <th scope="col"><b>Email Address</b></th>
+                <th scope="col"><b>Area of Specialization</b></th>
+                <th scope="col"><b>Image</b></th>
+            </tr>
+
+            <tr>
+                <td scope="row">1</td>
+                <td>PROF. RAJESH U. INGALE (HOD)</td>
+                <td>Asso.Prof</td>
+                <td>M.E.(EPS)</td>
+                <td> 23 years
+                </td>
+                <td>rajeshingale35@gmail.com</td>
+                <td> Electrical Power System, Power Quality</td>
+                <td> <img src="{% static 'dept/el/1.jpg' %}">
+                </td>
+            </tr>
+    
+
+            <tr>
+                <td scope="row">2</td>
+                <td> Prof. Mohini Ramesh Bhadikar</td>
+                <td>Asso.Prof</td>
+                <td>M.Tech. (CSE)
+                
+                <td> 2.5 year's (Polytechnic) </td>
+                <td>mbhadikar13@gmail.com </td>
+                <td>Electrical Drives and Control. </td>
+                <td> <img src="{% static 'dept/el/2.jpeg' %}">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td> PROF. SUPRIYA A. PURI </td>
+                <td>Asso.Prof</td>
+                <td> M.E.(CSE) </td>
+                <td> 04 years</td>
+                <td>supriyapuri1992@gmail.com</td>
+                <td>Control System Engineering</td>
+                <td> <img src="{% static 'dept/el/5.jpg' %}">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">4</td>
+                <td> PROF. AFROZ P SAYYAD </td>
+                <td>Asso.Prof</td>
+                <td>M.E.(CSE) </td>
+                <td> 04 years</td>
+                <td>dafroz@yahoo.com</td>
+                <td>Control System Engineering</td>
+                <td> <img src="{% static 'dept/el/6.jpg' %}">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td scope="row">5</td>
+                <td> Prof. Mane P.V </td>
+                <td>Asso.Prof</td>
+                <td>M. Tech </td>
+                <td> </td>
+                <td>pranita.mane@vdfengineering.co.in</td>
+                <td>Electrical drives and control</td>
+                <td> <img src="{% static 'dept/el/mane mam.jpg' %}">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td scope="row">6</td>
+                <td> Prof. Bawage A.S </td>
+                <td>Asso.Prof</td>
+                <td>M. Tech </td>
+                <td> </td>
+                <td>ankita.bawage@vdfengineering.co.in</td>
+                <td>Control system</td>
+                <td> <img src="{% static 'dept/el/bawage mam.jpg' %}">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td scope="row">7</td>
+                <td> Prof.Manthale R.R.</td>
+                <td>Asso.Prof</td>
+                <td>M.E.</td>
+                <td>2 Years</td>
+                <td>rahul.manthale@vdfengineering.co.in</td>
+                <td>Power System </td>
+                <td> <img src="{% static 'dept/el/manthale sir.jpg' %}">
+                </td>
+            </tr>
+
+
+
+            
+            <tr>
+                <td scope="row">8</td>
+                <td> Prof. Jagruti Solanke-Gore</td>
+                <td>Asso.Prof</td>
+                <td>ME-EPS</td>
+                <td>8 Years</td>
+                <td>solanke.jagrutis@gmail.com</td>
+                <td>Electrical power system, wind energy generation systems </td>
+                <td> <img style=" max-width: 250px;" src="{% static 'dept/el/solankemam.jfif' %}">
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td scope="row">9</td>
+                <td> Bande namdev vithalrao</td>
+                <td>electrician</td>
+                <td>15yrs of electrical wiring and installation</td>
+                <td>12 vocational</td>
+               
+                <td>namdevbande89@gmail.com</td>
+                <td></td>
+                
+                <td> <img style=" max-width: 250px;" src="{% static 'dept/el/nbhande.jpeg' %}">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td scope="row">10</td>
+                <td> shinde atul pandhari</td>
+                <td>laboratory assistan</td>
+                <td>B.E</td>
+                <td>7 yrs</td>
+               
+                <td>atulraje8007@gmail.com</td>
+                <td></td>
+                
+                <td> <img style=" max-width: 250px;" src="{% static 'dept/el/shinde.jpeg' %}">
+                </td>
+            </tr>
+
+    
+
+
+        </table>
+
+    </div>
+
+    <style>
+        img{
+            max-height: 250px;
+        }
+    </style>
+{% endblock %}

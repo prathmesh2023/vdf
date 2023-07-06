@@ -1,0 +1,148 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+FACULTIES-ELECTRONIC&TELECOMMUNICATION ENGINEERING{% endblock  %}
+
+{% block main %}
+
+{% load static %}
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <div class="col-fluid text-center my-4">
+        <table class="table">
+            <tr>
+                <th scope="col"><b>sr. no</b></th>
+                <th scope="col"><b>Name</b></th>
+
+                <th scope="col"><b>Designation</b></th>
+                <th scope="col"><b>Qualification</b></th>
+                <th scope="col"><b>Experience</b></th>
+                <th scope="col"><b>Email Address</b></th>
+                <th scope="col"><b>Area of Specialization</b></th>
+                <th scope="col"><b>Image</b></th>
+            </tr>
+
+            <tr>
+                <td scope="row">1</td>
+                <td> PROF. HOANRAO S. B. (H.O.D)
+                </td>
+                <td> ASST. PROF. </td>
+                <td> Ph.D(Electronics)*, M.E.(E&TC)
+                </td>
+                <td> 14 Years</td>
+                <td>etc.engg@vdf.in / honrao.sachin@gmail.com</td>
+                <td>Microprocessors and Microcontrollers , Electronics </td>
+                <td> <img <img style="height:250px;" src="{% static 'dept/et/honraosir.jpeg' %}">
+                </td>
+            </tr>
+
+            <tr>
+                <td scope="row">2</td>
+                <td> PROF. BHISE S. W. </td>
+                <td>ASST.PROF</td>
+                <td>M.E.(CE),B.E.(ECT)</td>
+                <td>16 Years</td>
+                <td> sunilbhise@aol.in</td>
+                <td>Communication</td>
+                <td> <img src="{% static 'dept/et/2.jpg' %}">
+                </td>
+            </tr>
+
+            <tr>
+                <td scope="row">3</td>
+                <td> PROF. F. M. GHANTE </td>
+                <td>ASST.PROF</td>
+                <td> M.E.(E&TC), B.E.(E&TC),</td>
+                <td> 10 Years
+                </td>
+                <td> firdosghante@gmail.com</td>
+                <td> Embedded Systems, Image Processing.</td>
+                <td> <img src="{% static 'dept/et/1.jpg' %}">
+                </td>
+            </tr>
+
+     
+
+            
+       
+
+            <tr>
+                <td scope="row">4</td>
+                <td> PROF. PATIL V. S. </td>
+                <td> ASST. </td>
+                <td> M.E.(Electronics)
+                </td>
+                <td> 10 Years</td>
+                <td>varun.patil28@gmail.com</td>
+                <td>Signals and System, IoT</td>
+                <td> <img src="{% static 'dept/et/7.jpg' %}">
+                </td>
+            </tr>
+          
+
+            <tr>
+                <td scope="row">5</td>
+                <td> PROF. Makane J.N.
+                </td>
+                <td> ASST. PROF. </td>
+                <td> M.E.( electronics and communication)
+                </td>
+                <td> 3.5 years of teaching in  polytechnic college</td>
+                <td>makanejayashree659@gmail.com </td>
+                <td>electronics & communication</td>
+                <td> <img src="{% static 'dept/et/maknemam.jpg' %}">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td scope="row">6</td>
+                <td> PROF. Patil V.P
+                </td>
+                <td> ASST. PROF. </td>
+                <td> M.E.( electronics and communication)
+                </td>
+                <td>2 years of teaching in  engineering college <br> 
+                    1 years of teaching in  polytechnic college</td>
+                <td>vaishu9921@gmail.com </td>
+                <td>electronics & communication</td>
+                <td> <img src="{% static 'dept/et/patilmam.jpg' %}" style="height:250px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td scope="row">7</td>
+                <td>PROF. Randale Ravi B. </td>
+                <td>Assistant Professor </td>
+                <td>M.E. </td>
+                <td>30 Years </td>
+                <td>ravi_randale@rediffmail.com</td>
+                <td>Electronics with specialization in computer engineering from</td>
+                <td> <img style="height:250px;" src="{% static 'dept/me/randale.png' %}">
+                </td>
+            </tr>
+
+            <tr>
+                <td scope="row">8</td>
+                <td>PROF. Pallavi Umakant Bilgunde </td>
+                <td>Assistant Professor </td>
+                <td>M.E.(Digital Communication), B.E. (Electronics)</td>
+                <td>Teaching Experience Of 4-Years At V.D.F School Of Polytechnic, Latur And 0.5 Years At Govt. Polytechnic, Pune  </td>
+                <td>bilgundepallavi12@gmail.com</td>
+                <td>Electronics, Microprocessor, Microcontroller</td>
+                <td> <img style="height:250px;" src="{% static 'dept/et/bilgundepu.jpeg' %}">
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+{% endblock %}

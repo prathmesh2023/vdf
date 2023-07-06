@@ -1,0 +1,31 @@
+{% comment %} {% extends "base.html" %} {% block title %} NAAC{% endblock %} {% block main %}
+
+
+<ul class=" container my-3 px-5 rounded-0"  type="none">
+    <li><a class="dropdown-item" href="/aqar2020_2021"><span class="fa fa-arrow-right" style="color: green;"> </span> AQAR 2020-2021 </a></li>
+
+    <li><a class="dropdown-item" href="/aqar2019_2020"><span class="fa fa-arrow-right" style="color: green;"> </span> AQAR 2019-2020  </a></li>
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span> IQAC  </a></li>
+
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span> AQAR  </a></li>
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span> NAAC SSR </a></li>
+
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span> NAAC DVV  </a></li>
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span> NAAC Re-DVV </a></li>
+
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span> NAAC Peer Team Visit  </a></li>
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span> NAAC Peer Team Visit Report </a></li>
+
+    <li><a class="dropdown-item" href="#"><span class="fa fa-arrow-right" style="color: green;"> </span>NAAC Certificate Accreditation  </a></li>
+
+</ul>
+
+{% endblock %} {% endcomment %}
+
+
+{% block item %}
+{% for i in show_naac %}
+
+<li><a class="dropdown-item" href="/aqar2020_2021"><span class="fa fa-arrow-right" style="color: green;"> </span> {{i}} </a></li>
+{% endfor %}
+{% endblock item %}

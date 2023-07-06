@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %} {% endblock %} {% block main %} {% load static %}
+<div class="container-fluid text-center my-1 " >
+    <h1>Trustee’s Message</h1>
+</div>
+
+<div class="container">
+
+    {%load static %}
+    <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8 text-center ">
+            <img class="img-thumbnail border-0" src="{% static 'images/adeshmukh.png'%}" style="max-height: 300px;" />
+
+            <h4 class="h4 my-2"><b>SHRI. AMIT DESHMUKH</b></h4>
+
+            <h6><b><i> TRUSTEE,  VILASRAO DESHMUKH FOUNDATION,GROUP OF INSTITUTIONS, LATUR </i></b></h6>
+
+
+            <p class="my-2">
+                India is a young nation-a country with a young population. Education in all its aspects is a resource that the country today must make available to the youth to enable them to participate in and contribute to their own growth as well as that of the nation.
+                In our own small way, we at Vilasrao Deshmukh Foundation (VDF) wish to contribute to this effort.
+            </p>
+
+            <p>VDF was created to help widen our nation’s technological base by providing high quality education through a creative balance of academic, professional and extracurricular programs. We have invested strategically in the most important resources-infrastructure,
+                faculty and programs. We at VDF are confident that our graduates, well equipped with technical knowledge, good communication skills and the confidence to compete successfully in the global arena, will contribute to the national base of
+                engineering, science and technology and take our country forward.
+            </p>
+
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+
+    </div>
+</div>
+
+{% endblock %}

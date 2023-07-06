@@ -1,0 +1,422 @@
+{% extends "base.html" %} {% block title %} {% endblock %} {% block main %}
+
+
+
+{% load static %}
+<!-- slider -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/2.jpeg' %}" class="d-block w-100 simg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="stitle">Welcome To Vilasrao Deshmukh Foundation</h5>
+                <a href="/aboutvdf"><button class="btn btn-danger rounded-pill">Know More</button></a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/1.jpg' %}" class="d-block w-100 simg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="stitle">Register For Admission</h5>
+                <a href="/registration"><button class="btn btn-success rounded-pill">Register Now</button></a>
+
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/2.jpeg' %}" class="d-block w-100 simg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <!-- <h5 class="stitle">Third slide label</h5> -->
+
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--  -->
+
+
+
+<!-- main -->
+
+
+<div class="container ">
+    <h1 class="text-center heada my-2 py-2">DEPARTMENTS</h1>
+    <h5 class="text-center headu">_______________________________________</span>
+
+
+
+</div>
+
+<!-- /main -->
+
+<!-- cards -->
+<style>
+    .cardinga:hover {
+        color: brown;
+    }
+    
+    a:hover {
+        color: brown;
+    }
+</style>
+<div class="container my-3 py-3 text-center">
+    <div class="row">
+        <div class="col-md-4 my-2">
+            <a href="/pages/about_as" style="text-decoration: none; color: black;" class="cardinga">
+                <div class="card rounded-0 carding" style="  border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px 8px 10px #888888; ">
+                    <img src="{% static 'home/as.jpg' %}" class="card-img-top rounded-0">
+
+                    <div class="card-body">
+
+                        <h5 class="h5">APPLIED SCIENCE & HUMANITIES DEPARTMENT</h5>
+                        <p style="color: chocolate;">__________________</p>
+                        <p>The Department is multi-disciplinary in nature with faculty from diverse disciplines such as Engineering Chemistry, Engineering Maths, Applied…</p>
+                        <center><button class="btn primary-bg text-white rounded-0">Know More</button></center>
+                    </div>
+
+                    <div class="card-footer rounded-0" style="height: 3px; background-color: #8c900e;">
+
+                    </div>
+            </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 my-2">
+            <a href="/pages/civil_ad" style="text-decoration: none; color: black;" class="cardinga">
+                <div class="card rounded-0 carding" style="  border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px 8px 10px #888888; ">
+                    <img src="{% static 'home/ce.jpg' %}" class="card-img-top rounded-0">
+
+                    <div class="card-body">
+
+                        <h5 class="h5">CIVIL ENGINEERING DEPARTMENT
+                        </h5>
+                        <p style="color: chocolate;">__________________</p>
+                        <p>It has been beautifully said that, “Civilization is through Civil Engineering.” This statement speaks volume about importance of…</p>
+                        <center><button class="btn primary-bg text-white rounded-0">Know More</button></center>
+                    </div>
+
+                    <div class="card-footer rounded-0" style="height: 3px; background-color: #8c900e;">
+
+                    </div>
+            </a>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 my-2">
+            <a href="/pages/computer_ad" style="text-decoration: none; color: black;" class="cardinga">
+                <div class="card rounded-0 carding" style="  border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px 8px 10px #888888; ">
+                    <img src="{% static 'home/co.jpg' %}" class="card-img-top rounded-0">
+
+                    <div class="card-body">
+
+                        <h5 class="h5">COMPUTER ENGINEERING DEPARTMENT</h5>
+                        <p style="color: chocolate;">__________________</p>
+                        <p>ABOUT COMPUTER ENGINEERING DEPARTMENT This decade is witnessing a rapid growth in IT industry due to liberalization, which…</p>
+                        <center><button class="btn primary-bg text-white rounded-0">Know More</button></center>
+                    </div>
+
+                    <div class="card-footer rounded-0" style="height: 3px; background-color: #8c900e;">
+
+                    </div>
+            </a>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4 my-2">
+            <a href="/pages/electrical_ad" style="text-decoration: none; color: black;" class="cardinga">
+                <div class="card rounded-0 carding" style="  border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px 8px 10px #888888; ">
+                    <img src="{% static 'home/el.jpg' %}" class="card-img-top rounded-0">
+
+                    <div class="card-body">
+
+                        <h5 class="h5">ELECTRICAL ENGINEERING DEPARTMENT</h5>
+                        <p style="color: chocolate;">__________________</p>
+                        <p>About department Welcome to the VDF’s Department of Electrical Engineering. Vilasrao Deshmukh Foundation’s School of Engineering & Technology…</p>
+                        <center><button class="btn primary-bg text-white rounded-0">Know More</button></center>
+                    </div>
+
+                    <div class="card-footer rounded-0" style="height: 3px; background-color: #8c900e;">
+
+                    </div>
+            </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 my-2">
+            <a href="/pages/ELECTRONICS_ad" style="text-decoration: none; color: black;" class="cardinga">
+                <div class="card rounded-0 carding" style="  border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px 8px 10px #888888; ">
+                    <img src="{% static 'home/et.jpg' %}" class="card-img-top rounded-0">
+
+                    <div class="card-body">
+
+                        <h5 class="h5">ELECTRONICS AND TELECOMMUNICATION</h5>
+                        <p style="color: chocolate;">__________________</p>
+                        <p>ABOUT ELECTRONICS AND TELECOMMUNICATION DEPARTMENT Today as per the company requirements there is huge demand for the electronics…</p>
+                        <center><button class="btn primary-bg text-white rounded-0">Know More</button></center>
+                    </div>
+
+                    <div class="card-footer rounded-0" style="height: 3px; background-color: #8c900e;">
+
+                    </div>
+            </a>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 my-2">
+            <a href="/pages/mechanical_ad" style="text-decoration: none; color: black;" class="cardinga">
+                <div class="card rounded-0 carding" style="  border: 1px solid;
+                padding: 10px;
+                box-shadow: 5px 10px 8px 10px #888888; ">
+                    <img src="{% static 'home/me.jpg' %}" class="card-img-top rounded-0">
+
+                    <div class="card-body">
+
+                        <h5 class="h5">MECHANICAL ENGINEERING DEPARTMENT</h5>
+                        <p style="color: chocolate;">__________________</p>
+                        <p>ABOUT MECHANICAL ENGINEERING DEPARTMENT The department has established in 2010 to explore students to new area of Engineering…</p>
+                        <center><button class="btn primary-bg text-white rounded-0">Know More</button></center>
+                    </div>
+
+                    <div class="card-footer rounded-0" style="height: 3px; background-color: #8c900e;">
+
+                    </div>
+            </a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<!-- /cards -->
+
+<!-- divider
+    <div style="height: 2px; width: 100%; background-color: #830a0a;">
+
+    </div>
+
+    -->
+
+<div class="bg-light">
+    <div class="container ">
+        <h1 class="text-center heada my-2 py-2">News & Announcements
+        </h1>
+        <h5 class="text-center headu">_______________________________________</span>
+
+
+
+    </div>
+
+
+
+
+    <div class="container text-center " style="background-color: blueviolet; color: #830a0a; font-size: 15px;">
+        <ul class="list-group list-group-flush">
+
+            <b>
+                {% for i in news %}
+                    <a style="text-decoration: none;" href="/news/{{i.link}}"><li class="list-group-item lin">{{i.title}}</li></a> {% endfor %}
+
+
+
+
+            </b>
+        </ul>
+
+
+    </div>
+    <br>
+
+</div>
+
+
+
+<div class="container-fluid  my-3 py-3 primary-bg text-white">
+    <h1 class="text-center heada">About V.D.F School Of Engineering & Technology</h1>
+
+</div>
+
+<div class="container-fluid text-white " style="background-color: rgba(184, 184, 184, 0.274); margin-top: -16px;">
+    <div class="row">
+        <div class="col-md-6 bg-light " style="color: black;">
+            <br>
+            <h5> Vilasrao Deshmukh Foundation</h5>
+            <br> VDF aims at providing, through its School of Engineering & Technology, and School of Pharmacy, world-class professional education programmes in the two disciplines with additional focus on business and cross cultural communication and
+            related soft skills. Students shall be appropriately trained for placement in select companies with the help of the Placement Cell and the Institutes’ industry interaction programmes.
+            <br><br> VDF also intends to set up a medical college and teaching hospital as well as run accelerated short-term learning programmes to meet on-demand industry requirements in sectors such as retail, outsourcing, travel, tourism, hospitality,
+            etc.
+
+        </div>
+
+        <div class="col-md-6 mx-0 px-0">
+            <div style="background-color: coral;">
+                <h5 class="mx-2">Vission:</h5>
+                <p class="mx-2">To be a leading organization devoted to technological, educational and economic development of the region by imparting high quality engineering and pharmaceutical education to all.</p>
+            </div>
+
+            <div style="background-color:lightgreen">
+                <h5 class="mx-2">Mission:</h5>
+                <p class="mx-2">To be a world-class knowledge organization committed to providing sound quality engineering and pharmaceutical education; housing miscellaneous interdisciplinary research and development activities; and an organization that is dedicated
+                    to developing an academic community that believes in innovation and life-long learning. </p>
+            </div>
+
+            <div style="background-color: coral;">
+                <h5 class="mx-2">Core Values:</h5>
+                <p class="mx-2" style="font-size: 10px;">
+                    <span>Reflecting the uniqueness of VDF Group of Institutions, the following core values are advocated:
+
+                          Excellence in teaching / learning: Enhance the teaching effectiveness with full participation of students in the learning process.
+                          Transparence of administration: Enhance the participation of faculty and staff in the decision-making process of the School.
+                          Quality assurance: Establish the quality assurance system of all academic activities.
+                          Unity in Diversity: Dedicate to the value of diversity among individuals and encourage individual growth through nurturance, service and fairness.
+                          Culture of Collaboration: Value the synergy that results from collaboration, which enhances the learning, discovery and engagement mission of the School’s.</span>
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="container ">
+    <h1 class="text-center heada my-2 py-2">GALLERY</h1>
+    <h5 class="text-center headu">_______________________________________</span>
+
+
+
+</div>
+
+
+
+<div class="container my-2">
+    <div class="row ">
+        {% for h in gal%} {% if forloop.counter0|divisibleby:3 %}
+    </div>
+    <div class="row my-4">
+        {% endif %}
+
+
+        <div class="col-md-4">
+
+            <a href="{{h.img.url}}"><img title="{{h.caption}}" class="gimg img-thumbnai" data-bs-toggle="modal" style="max-height:300px; width: 100%;" data-bs-target="#exampleModal" src="{{h.img.url}}" alt="{{h.caption}}">
+            </a>
+
+
+
+
+        </div>
+
+
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<div class="container ">
+    <h1 class="text-center heada my-2 py-2">Our Recuiters
+    </h1>
+    <h5 class="text-center headu">_______________________________________</span>
+
+
+
+</div>
+
+
+
+<div class="container my-2">
+    <div class="row ">
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+        <div class="col-md-2">
+            <img class="" style="height: 30px; width: 100%;" src="https://www.mica.ac.in/images/recruiterzone/Our%20Partners%20-%20Final%20Placements%20-%202019-20.png">
+        </div>
+    </div>
+</div>
+
+
+<div class="container ">
+    <h1 class="text-center heada my-2 py-2">Total Visitors</h1>
+    <h5 class="text-center headu">_______________________________________</span>
+
+
+
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4 text-center bg-dark ">
+            <h2 style="color: rgb(189, 133, 30); margin-top: 5px;"><span class="fa fa-eye"> </span> | {{visit}} |</h2>
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

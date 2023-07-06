@@ -1,0 +1,356 @@
+{% extends 'base.html' %} {% block title %}{% endblock %} {% block main %}
+<div class="container-fluid text-center my-2 py-2 ">
+    <h1> VDF B.Tech.(Engineering) Admission Enquiry Form 2021-22 ( बी. टेक. - प्रवेश चौकशी फॉर्म)</h1>
+    <p>
+        <center>व्हीडीएफ स्कूल ऑफ इंजिनिअरिंग & टेक्नॉलॉजी लातूर यांच्यावतीने अभियांत्रिकी / बी. टेक. अभ्यासक्रमासाठी प्रवेश पूर्व नोंदणी तसेच प्रवेश प्रक्रिये संदर्भातील सर्व माहिती इच्छुक विद्यार्थ्यापर्यंत पोहचवणे व त्यांच्या शंकांचे निरासरण करणे Vilasrao
+            Deshmukh Foundation, Group of Institutions, New MIDC, Airport Road, Latur -413531</center>
+    </p>
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <h2> महाविद्यालयाची वैशिष्ट्ये:-</h2>
+            <ol>
+                <li>परिपूर्ण व सुसज्ज इमारत. ( मराठवाड्यातील एकमेव )</li>
+                <li>रवर्षी ९०% पेक्षा अधिक निकाल, 2015 पासून बरेच विद्यार्थी विद्यापीठामध्ये प्रथम, द्वितीय आणि तृतीय क्रमांकावर विशेष प्रविण्यासह उत्तीर्ण.</li>
+                <li>अनुभवी प्राध्यापक वृंद.</li>
+                <li> संपूर्ण महाविद्यालय CCTV च्या नियंत्रणाखाली.</li>
+                <li> २४ तास इंटरनेट सुविधा.</li>
+                <li>संपूर्ण महाविद्यालयात RO प्युरिफायइड पिण्याचे पाणी.</li>
+                <li>डिजिटल लायब्ररी सह 10358 पुस्तके + 30+ आंतरराष्ट्रीय व राष्ट्रीय मासिके उपलब्ध.</li>
+                <li> रीडिंग रूम ची सुविधा.</li>
+                <li>दैनंदिन उपस्थिती, परीक्षेचा निकाल, इत्यादीची SMS द्वारे पालकांना माहिती.</li>
+
+
+                <li> महाविद्यालया जवळच शासकीय व खाजगी वसतिगृह सुविधा. याव्यतिरिक्त शासनाची पंजाबराव देशमुख वसतिगृह योजना. </li>
+                <li> खुल्या प्रवर्गातील विद्यार्थ्यांना ईबीसी सवलत तर मागासवर्गीय विद्यार्थ्यांना शासनाच्या विविध शिष्यवृत्ती योजना. </li>
+                <li>प्रत्येक वर्षी महाविद्यालयामध्ये विविध शैक्षणिक व टेक्निकल स्पर्धेचे आयोजन.</li>
+                <li> शहरापासून बसची, खाजगी वाहनाची व्यवस्था. </li>
+                <li> सुसज्ज कॉम्प्युटर लॅब्स व कोविड-19 काळात ऑनलाईन शिक्षणाची देखील सुविधा. </li>
+                <li> ट्रेनिंग आणि प्लेसमेंट विभाग (दरवर्षी बहुतांश विद्यार्थी नोकरीस पात्र) </li>
+                <li> विद्यार्थ्यांच्या गुणवत्ता वाढीसाठी विशेष प्रयत्न आणि नोकरी व व्यवसाय मार्गदर्शनासाठी सहकार्य (शैक्षणिक पालकत्व योजना). अधिक माहितीसाठी वेबसाईटला भेट द्या. </li>
+            </ol>
+        </div>
+
+        <div class="col-md-9 ">
+            <form action="/registration" method="post" style="background-color: rgba(211, 206, 206, 0.027);">
+                {% csrf_token %}
+                <div class="form-comtrol ">
+                    <label for="inputEmail4" class="form-label"><strong>Full Name ( पूर्ण नाव ) : (Surname, First Name, Middle name) *
+</strong> </label>
+                    <input required type="Full Name" class="form-control" id="name" name="name">
+                </div>
+
+                <div class="form-comtrol">
+                    <label for="inputEmail4" class="form-label my-2"><strong>Contact No. ( संपर्क क्रमांक ): *</strong> </label>
+                    <input required type="Full Name" class="form-control" id="name" name="phone">
+                </div>
+
+
+                <div class="form-comtrol">
+                    <label for="inputEmail4" class="form-label my-2"><strong>WhatsUp Mobile Number (प्रवेश प्रक्रिये संदर्भातील सर्व माहिती पाठवण्याकरिता )</strong> </label>
+                    <input required type="Full Name" class="form-control" id="name" name="wp">
+                </div>
+
+
+                <div class="form-comtrol">
+                    <label for="inputEmail4" class="form-label my-2"><strong>Address ( पत्ता ): *</strong> </label>
+                    <input required type="Full Name" class="form-control" id="name" name="add">
+                </div>
+
+                <div class="form-comtrol">
+                    <label for="inputEmail4" class="form-label my-2"><strong> For which course do you want to take admission?(तुम्हाला कोणत्या कोर्ससाठी प्रवेश घ्यायचा आहे? ) *</strong> </label>
+                    <br>
+                    <input class="form-check-input" type="radio" id="html" name="course" value="FY">
+                    <label class="form-check-label" for="html">B.Tech. First Year ( प्रथम वर्ष 12 वी Science नंतर)</label><br>
+
+                    <input class="form-check-input" type="radio" id="css" name="course" value="DSE">
+                    <label for="css">B.Tech. Direct Second Year Engineering ( Dipoma-Polytechnic / B.Sc. नंतर )</label><br>
+                </div>
+
+
+                <div class="form-comtrol my-2">
+                    <label class="form-check-label" for="inputEmail4" class="form-label my-2"><strong> B.Tech. First Year ( प्रथम वर्ष ) साठी PCM group ची सीईटी फॉर्म भरला आहे का? (फॉर्म भरण्यासाठी शेवट दिनांक 16-08-2021) *</strong> </label>
+                    <br>
+                    <input class="form-check-input" type="radio" id="by" name="ispcm" value="y">
+                    <label for="by">Yes</label><br>
+
+                    <input class="form-check-input" type="radio" id="bn" name="ispcm" value="n">
+                    <label class="form-check-label" for="bn">No</label><br>
+                </div>
+
+
+                <div class="form-comtrol">
+                    <label for="cat" class="form-label my-2"><strong> Caste: (To inform you about Government Scholarship) *</strong> </label>
+                    <br>
+                    <select class="form-select" name="cast" id="select-choice">
+                                        <option value="sc/st">SC/ST</option>
+                                        <option value="VJ/NT(A,B&C)">VJ/NT(A,B&C)</option>
+                                        <option value="OBC">OBC</option>
+                                        <option value="SEBC">SEBC</option>
+                                        <option value="SEBC">EWS</option>
+                                        <option value="SEBC">MINORITY</option>
+                                        <option value="OPEN">OPEN</option>
+                                      </select>
+
+                </div>
+
+
+                <div class="form-comtrol">
+                    <label for="inputEmail4" class="form-label my-2"><strong> Engineering Branches ( अभियांत्रिकी शाखा ) Mension interested Branch *</strong> </label>
+                    <br>
+                    <input class="form-check-input" type="radio" id="ce" name="branch" value="ce">
+                    <label class="form-check-label" for="ce">Civil Engineering</label><br>
+
+                    <input class="form-check-input" type="radio" id="me" name="branch" value="me">
+                    <label for="me">Mechanical Engineering</label><br>
+
+                    <input class="form-check-input" type="radio" id="co" name="branch" value="co">
+                    <label for="co">Computer Engineering</label><br>
+
+                    <input class="form-check-input" type="radio" id="el" name="branch" value="el">
+                    <label for="el">Electrical Engineering
+ </label><br>
+
+                    <input class="form-check-input" type="radio" id="et" name="branch" value="et">
+                    <label for="et">Electronics & Tele Communications Engineering</label><br>
+                </div>
+
+
+
+
+                <div class="">
+                    <label for="inputEmail4" class="form-label my-2"><strong> Engineering Branches ( अभियांत्रिकी शाखा ) Select any other interested Branch</strong> </label>
+                    <br>
+                    <input class="form-check-input" type="checkbox" id="1" name="oib" value="ce">
+                    <label class="form-check-label" for="1">
+                        Civil Engineering
+                    </label><br>
+
+                    <input class="form-check-input" type="checkbox" id="2" name="oib" value="me">
+                    <label class="form-check-label" for="2">
+                        Mechanical Engineering
+
+                    </label><br>
+
+                    <input class="form-check-input" type="checkbox" id="3" name="oib" value="co">
+                    <label class="form-check-label" for="3">
+                      Computer Engineering
+
+                    </label><br>
+
+                    <input class="form-check-input" type="checkbox" id="4" name="oib" value="el">
+                    <label class="form-check-label" for="4">
+                      Electrical Engineering
+                    </label><br>
+                    <input class="form-check-input" type="checkbox" id="5" name="oib" value="et">
+                    <label class="form-check-label" for="5">
+                       Electronics & Tele Communications Engineering
+                    </label>
+
+
+
+                    <div class="form-comtrol">
+                        <label for="inputEmail4" class="form-label my-2"><strong> Are you interested to take Education Loan? (आपल्याला शैक्षणिक कर्ज घेण्याची गरज आहे का?) *</strong> </label>
+                        <label>Are you interested to take Education Loan? (आपल्याला शैक्षणिक कर्ज घेण्याची गरज आहे का?) *</label>
+                        <br>
+                        <input class="form-check-input" type="radio" id="yaa" name="loan" value="y">
+                        <label for="yaa">Yes</label><br>
+
+                        <input class="form-check-input" type="radio" id="naa" name="loan" value="n">
+                        <label class="form-check-label" for="naa">No</label><br>
+
+                    </div>
+
+
+                    <div class="form-comtrol">
+                        <label for="inputEmail4" class="form-label my-2"><strong> Do you want Installments in Fees? (आपल्याला फी मध्ये हप्ता हवा आहे का?) * (आपल्याला शैक्षणिक कर्ज घेण्याची गरज आहे का?) *</strong> </label>
+
+                        <br>
+                        <input class="form-check-input" type="radio" id="yaaa" name="insta" value="y">
+                        <label for="yaaa">Yes</label><br>
+
+                        <input class="form-check-input" type="radio" id="naaa" name="insta" value="n">
+                        <label class="form-check-label" for="naaa">No</label><br>
+
+                    </div>
+
+
+                    <button class="btn btn-primary  my-3" type="submit"> Submit</button>
+
+
+
+            </form>
+
+            </div>
+        </div>
+
+        <!-- <form class="row g-3 " style="background-color: rgba(224, 224, 224, 0.068);">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Full Name </label>
+                    <input type="Full Name" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Contact No</label>
+                    <input type="Contact" class="form-control" id="contact no">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Whats up Mobile Number</label>
+                    <input type="Contact" class="form-control" id="contact no">
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Address </label>
+                    <input type="Address" class="form-control" id="Address">
+                </div>
+                <p><b>For which course do you want to take admission?(तुम्हाला कोणत्या कोर्ससाठी प्रवेश घ्यायचा आहे? )</b></p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                          B.Tech. First Year( प्रथम वर्ष 12 वी Science नंतर)
+                      </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        B.Tech. Direct Second Year Engineering ( Dipoma-Polytechnic / B.Sc. नंतर )
+                      </label>
+                </div>
+
+                <div class="form-check ">
+                    <p><b>B.Tech. First Year ( प्रथम वर्ष ) साठी PCM group ची सीईटी फॉर्म भरला आहे का?</b></p>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                         YES 
+                      </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                       NO
+                      </label>
+
+                    <div class="dropdown my-2 py-2">
+                        <p><b> Caste: (To inform you about Government Scholarship) </b> </p>
+                        <div>
+                            <div>
+                                <label for="select-choice">Choose:</label>
+                                <div>
+                                    <select name="select-choice" id="select-choice">
+                                        <option value="choice-1">SC/ST</option>
+                                        <option value="choice-2">VJ/NT(A,B&C)</option>
+                                        <option value="choice-3">OBC</option>
+                                        <option value="choice-3">SEBC</option>
+                                        <option value="choice-3">MINORITY</option>
+                                        <option value="choice-3">OPEN</option>
+                                      </select></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="my-2 py-2">
+                    <p><b>Engineering Branches ( अभियांत्रिकी शाखा ) Mension interested Branch</b></p>
+                </div>
+                <div>
+                    <input type="radio" name="choice" value="choice-1" id="choice-1" checked>
+                    <label for="choice-1">Computer Engineering</label>
+                </div>
+                <div>
+                    <input type="radio" name="choice" value="choice-2" id="choice-2">
+                    <label for="choice-2"> Civil Engineering</label>
+                </div>
+                <div><input type="radio" name="choice" value="choice-3" id="choice-3">
+                    <label for="choice-3">Mechanical Engineering</label>
+                </div>
+                <div>
+                    <input type="radio" name="choice" value="choice-3" id="choice-3">
+                    <label for="choice-3">Electrical Engineering</label>
+                </div>
+                <div>
+                    <input type="radio" name="choice" value="choice-3" id="choice-3">
+                    <label for="choice-3">Electronics & Tele Communications Engineering</label>
+                </div>
+
+                <div class="my-2 py-2">
+                    <p> <b>Engineering Branches ( अभियांत्रिकी शाखा ) Select any other interested Branch</b></p>
+                </div>
+
+
+
+                <div>
+                    <input type="checkbox" name="check-1" value="check-1" id="check-1" checked>
+                    <label for="check-1">Computer Engineering</label>
+                </div>
+                <div><input type="checkbox" name="check-2" value="check-2" id="check-2">
+                    <label for="check-2">Civil Engineering</label>
+                </div>
+                <div><input type="checkbox" name="check-3" value="check-3" id="check-3">
+                    <label for="check-3">Mechanical Engineering</label>
+                </div>
+                <div><input type="checkbox" name="check-3" value="check-3" id="check-3">
+                    <label for="check-3">Electrical Engineering</label>
+                </div>
+                <div><input type="checkbox" name="check-3" value="check-3" id="check-3">
+                    <label for="check-3">Electronics & Tele Communications Engineering</label>
+                </div>
+        </div>
+
+
+        <div class="my-2 py-2">
+            <p><b> Are you interested to take Education Loan? (आपल्याला शैक्षणिक कर्ज घेण्याची गरज आहे का?) </b>
+            </p>
+        </div>
+        <div>
+            <input type="radio" name="choice" value="choice-2" id="choice-2">
+            <label for="choice-2"> YES</label>
+        </div>
+        <div>
+            <input type="radio" name="choice" value="choice-3" id="choice-3">
+            <label for="choice-3">NO</label>
+        </div>
+        <div class="my-2 py-2">
+            <p><b> Do you want Installments in Fees? (आपल्याला फी मध्ये हप्ता हवा आहे का?) </b>
+            </p>
+        </div>
+        <div>
+            <input type="radio" name="choice" value="choice-2" id="choice-2">
+            <label for="choice-2"> YES</label>
+        </div>
+        <div>
+            <input type="radio" name="choice" value="choice-3" id="choice-3">
+            <label for="choice-3">NO</label>
+        </div>
+
+
+
+    </div>
+
+
+
+
+</div>
+</div>
+</form> -->
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+{% endblock %}

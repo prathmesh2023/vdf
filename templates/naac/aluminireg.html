@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+<div class="container text-center h2 my-2">
+  <h2>Alumini Registration</h2>
+</div>
+
+
+  <div class="container my-4">
+    
+<form class="row g-3" method="POST" action="/aluminireg">
+  {% csrf_token %}
+
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="inputEmail4" name="fname" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="inputPassword4" name="lname" required>
+      </div>
+
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" name="email" required>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Mobile/Whatsapp Number</label>
+      <input type="text" class="form-control" id="inputPassword4" name="mobile" required>
+    </div>
+
+
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">Year Of Passing</label>
+        <input type="text" class="form-control" id="inputCity" name="yop" required>
+      </div>
+      <div class="col-md-4">
+        <label for="inputCity" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" id="inputCity" name="dob" required >
+      </div>
+      <div class="col-md-2">
+        <label for="inputState" class="form-label">Marital Status</label>
+       
+        <select id="inputState" class="form-select" name="maritalstaus" required>
+            <option>Single</option>
+            <option>Married</option>
+            
+        </select>
+      </div>
+
+
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Profession</label>
+        <input type="text" class="form-control" id="inputAddress"  name="profession" required>
+      </div>
+
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="add" required>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="add2" required>
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity" name="city" required>
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select" name="state" required>
+        <option selected>Choose...</option>
+        <option>Maharashtra</option>
+        <option>Other</option>
+
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip" name="zip" required>
+    </div>
+    <div class="col-12">
+      
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Where did life take you after graduation?</label>
+            
+            <textarea class="form-control" name="aftergraduation" required></textarea>
+          </div>
+        
+    </div>
+
+
+    <div class="col-12">
+      
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Fondest memories of life @College</label>
+            
+            <textarea class="form-control" name="memorie" required></textarea>
+          </div>
+        
+    </div>
+
+
+
+    <canvas class="my-2 form-control" id="myCanvas" width="150" height="50" style="border:1px solid #d3d3d3;     width: 150px;
+    margin-left: 10px;">
+        Captcha</canvas>
+ 
+         <script>
+         var c = document.getElementById("myCanvas");
+         var ctx = c.getContext("2d");
+         ctx.font = "30px Arial";
+         ctx.strokeText("{{funcapal}}",5,25);
+         ctx.moveTo(0, 0);
+         ctx.lineTo(200, 80);
+         ctx.stroke();
+         </script>
+ <br>
+         <input name="hstr" type="hidden" value="{{funcapal}}">
+         <br>
+ 
+         <input required name="cap" type="text" placeholder="Enter Security Code " class="form-control " style=" margin-left: 8px;
+         width: 231px;
+         height: 34px;">
+ <br>
+
+ 
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-success" style="    width: 161px;
+      margin-left: 2px;"> Register </button>
+    </div>
+  </form>
+  </div>
+
+
+
+{% endblock %}

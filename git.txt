@@ -1,0 +1,22 @@
+#!/bin/bash
+git config --local user.email "xxx@xxx.com"
+git config --local user.name "KING"
+git remote set-url origin https://xxx:xxx@xxx.xxx.xxx/xxx/xxx.git
+# git pull origin master
+git add deploy/pom.xml
+git commit -m "jenkins push code to git"
+git push origin master
+
+
+
+echo "# vdf" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/prathmesh-lohar/vdf.git
+git push -u origin main
+
+git remote add origin https://github.com/prathmesh-lohar/vdf.git
+git branch -M main
+git push -u origin main

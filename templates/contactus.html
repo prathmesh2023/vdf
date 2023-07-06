@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+<div class="container text-center my-3">
+    <h1>Contact Us</h1>
+</div>
+
+
+
+<section class="container ">
+    <!--Contact heading-->
+    <div class="row">
+
+       <!--Grid column-->
+       <div class="col-sm-12 mb-4 col-md-5">
+          <!--Form with header-->
+          <div class="card border-primary rounded-0">
+             <div class="card-header p-0">
+                <div class="bg-primary text-white text-center py-2">
+                   <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+                 
+                </div>
+             </div>
+             <div class="card-body p-3">
+                <form action="/contact_us" method="POST">
+                   {% csrf_token %}
+                   <div class="form-group">
+                   <label> Your name </label>
+                   <div class="input-group">
+                      <input required value="" type="text" name="name" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name">
+                   </div>
+                 </div>
+                   <div class="form-group">
+                      <label>Your email</label>
+                      <div class="input-group mb-2 mb-sm-0">
+                         <input required type="email" value="" name="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
+                      </div>
+                   </div>
+                   <div class="form-group">
+                      <label>Subject</label>
+                      <div class="input-group mb-2 mb-sm-0">
+                         <input required type="text" name="sub" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject">
+                      </div>
+                   </div>
+                   <div class="form-group">
+                      <label>Message</label>
+                      <div class="input-group mb-2 mb-0">
+                         <textarea required class="form-control" name="msg">
+                         </textarea>
+                      </div>
+<center>
+                      <canvas class="my-2" id="myCanvas" width="150" height="40" style="border:1px solid #d3d3d3;">
+                        Captcha</canvas>
+                        <br>
+
+                        <input name="hstr" type="hidden" value="{{funcap2}}">
+
+                        <input required name="cap" type="text" placeholder="Enter Abhove Letters">
+                     </center>
+
+                         <script>
+                         var c = document.getElementById("myCanvas");
+                         var ctx = c.getContext("2d");
+                         ctx.font = "30px Arial";
+                         ctx.strokeText("{{funcap2}}",5,25);
+                         ctx.moveTo(0, 0);
+                         ctx.lineTo(200, 80);
+                         ctx.stroke();
+                         </script>
+
+                   </div>
+                   <div class="text-center my-2">
+                      <input type="submit" name="submit" value="submit" class="btn btn-primary btn-block rounded-0 py-2">
+                   </div>
+
+                  </form>
+              
+                  </div>
+                   
+             </div>
+          </div>
+       <!--Grid column-->
+       
+       <!--Grid column-->
+       <div class="col-sm-12 col-md-7">
+
+          <div class="row">
+             <div class="col-md-12 mx-5">
+                <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a><span class="h3 my-2"> Address : </span>
+                <p> Plot No. 165A, Additional MIDC, Near To Manjra Sugar, Barshi Road Latur, Maharashtra 413531  </p>
+             </div>
+
+            </div>
+
+            <div class="row">
+
+             <div class="col-md-4 mx-5">
+                <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a><span class="h3 my-2"> Phone : </span>
+                <p>0 2382 267732</p>
+             </div>
+</div>
+             <div class="row">
+
+             <div class="col-md-4 mx-5">
+                <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a><span class="h3 my-2"> Email : </span>
+                <p> info.engg@vdf.in</p>
+             </div>
+
+             </div>
+
+
+
+          
+
+        
+          </div>
+       </div>
+       <!--Grid column-->
+         </div>
+ </section>
+
+
+{% endblock main %}
